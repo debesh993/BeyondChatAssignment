@@ -2,11 +2,13 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import SerpApi from 'google-search-results-nodejs';
 import { OpenRouter } from '@openrouter/sdk';
+import dotenv from 'dotenv'
+dotenv.config()
 
 const LARAVEL_API_ORIGINAL = 'http://127.0.0.1:8000/api/original-articles';
 const LARAVEL_API_UPDATED = 'http://127.0.0.1:8000/api/updated-articles';
-const SERP_API_KEY = '3ca43f9250b800900a09f8b6f1dcf2c0307e023f6e9c0c7ce9060d9fb766bb6a';
-const OPENROUTER_API_KEY = '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';
+const SERP_API_KEY = process.env.SERPKEY;
+const OPENROUTER_API_KEY = process.env.OPENROUTERKEY;
 
 const client = new SerpApi.GoogleSearch(SERP_API_KEY);
 const openrouter = new OpenRouter({ apiKey: OPENROUTER_API_KEY });

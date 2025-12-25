@@ -15,6 +15,7 @@
     "@openrouter/sdk": "^0.3.10",
     "axios": "^1.13.2",
     "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "google-search-results-nodejs": "^2.1.0",
     "openai": "^6.15.0"

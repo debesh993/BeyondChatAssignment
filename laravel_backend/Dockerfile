@@ -26,7 +26,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY . /var/www/html
 
 # Install PHP dependencies
-RUN composer install --optimize-autoloader --no-dev
+RUN composer install --no-dev --optimize-autoloader --no-scripts
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \

@@ -1,0 +1,22 @@
+{
+  "name": "node_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openrouter/sdk": "^0.3.10",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "express": "^5.2.1",
+    "google-search-results-nodejs": "^2.1.0",
+    "openai": "^6.15.0"
+  }
+}

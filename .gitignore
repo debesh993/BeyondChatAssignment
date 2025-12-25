@@ -1,0 +1,29 @@
+# ================= Laravel =================
+/laravel_backend/vendor/
+/laravel_backend/node_modules/
+/laravel_backend/public/storage
+/laravel_backend/storage/*.key
+/laravel_backend/.env
+/laravel_backend/Homestead.yaml
+/laravel_backend/Homestead.json
+/laravel_backend/.phpunit.result.cache
+/laravel_backend/.phpunit.cache
+
+# ================= Node.js =================
+/node_backend/node_modules/
+node_backend/npm-debug.log*
+node_backend/yarn-debug.log*
+node_backend/yarn-error.log*
+/node_backend/.env
+
+# ================= React =================
+/react_frontend/node_modules/
+/react_frontend/build/
+/react_frontend/.env
+
+# ================= System / IDE =================
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
